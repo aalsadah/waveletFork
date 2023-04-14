@@ -11,7 +11,7 @@ class Handler implements URLHandler {
             return String.format("Ali's Number: %d", num);
         } else if (url.getPath().equals("/increment")) {
             num += 1;
-            return String.format("Number incremented!", num);
+            return String.format("Number incremented!");
         } else {
             System.out.println("Path: " + url.getPath());
             if (url.getPath().contains("/add")) {
